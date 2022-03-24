@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --clr-light: #fff;
+  --clr-dark: black;
+
+  --clr-primary: #fff;
+  --clr-secondary: black;
+}
+
+.container {
+  display: flex;
+}
+
+.search-container {
+  height: 100vh;
+  flex-basis: 40%;
+  padding: 20px;
+}
+
+.map-container {
+  background-color: aquamarine;
+  height: 100vh;
+  flex-basis: 60%;
+}
+
+.header-logo-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  text-decoration: none;
+}
+
+.dark-text {
+  color: #4c5976;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.text {
+  color: #2ddbac;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: -5px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  box-shadow: 3px 4px 10px -4px rgb(0 0 0 / 25%);
+}
+
+input {
+  border: none;
+  height: 40px;
+  width: 75%;
+  padding: 0px 10px;
+  font-size: 20px;
+  background: transparent;
+  color: var(--clr-secondary);
+}
+
+.search-icon {
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-primary);
+  background: linear-gradient(90deg, #3cb4be, #43de7f);
+}
+
+.bar-details-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.search-bar-container {
+  padding-top: 20px;
+}
+
+*:focus {
+  outline: none;
+}
+
+.details-text {
+  margin-top: 50px;
+}
+
+.details-text span {
+  font-size: 20px;
+  color: var(--clr-secondary);
+}
+
+.slider-arrow {
+  width: 10px;
+}
+
+.slider-button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .header-section {
+    display: none;
+  }
+
+  .search-bar-container {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding-top: 50px;
+    margin-top: 60px;
+  }
+
+  .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: unset;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
