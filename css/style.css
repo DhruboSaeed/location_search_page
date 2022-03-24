@@ -23,7 +23,6 @@
 }
 
 .map-container {
-  background-color: aquamarine;
   height: 100vh;
   flex-basis: 60%;
 }
@@ -117,7 +116,9 @@ input {
 iframe {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 59%;
+  -webkit-user-drag: none;
+  touch-action: none;
 }
 
 @media (min-width: 300px) and (max-width: 1200px) {
@@ -127,6 +128,10 @@ iframe {
 
   .header-section {
     display: none;
+  }
+
+  .header-logo-text{
+      display: none;
   }
 
   .search-bar-container {
@@ -149,5 +154,9 @@ iframe {
 
   .main {
     width: 100%;
+  }
+
+  iframe{
+      width: 100%;
   }
 }
